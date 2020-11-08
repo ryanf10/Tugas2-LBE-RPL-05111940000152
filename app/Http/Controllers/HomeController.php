@@ -26,7 +26,7 @@ class HomeController extends Controller
         if (auth()->user()->role == 'User') {
             return view('home');
         } else if (auth()->user()->role == 'Admin') {
-            return view('admin.home');
+            return redirect()->route('adminhome');
         }
     }
 }
