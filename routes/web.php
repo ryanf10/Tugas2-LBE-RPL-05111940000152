@@ -19,4 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+//middleware admin used in AdminController constructor
 Route::get('/admin', 'AdminController@index')->name('adminhome');
